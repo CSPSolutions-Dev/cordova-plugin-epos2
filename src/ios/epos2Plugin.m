@@ -183,7 +183,9 @@
         if (result != EPOS2_SUCCESS) {
             return;
         }
-
+        
+        int resultCut = [printer addCut:0]; 
+        
         [self printData];
     }];
 }
