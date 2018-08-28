@@ -184,6 +184,8 @@
             return;
         }
 
+        int resultCut = [printer addCut:0]; // Add to cut paper
+            
         [self printData];
     }];
 }
