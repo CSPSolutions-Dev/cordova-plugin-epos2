@@ -6,6 +6,9 @@ var PLUGIN_NAME = 'epos2';
 var epos2 = {
   startDiscover: function(successCallback, errorCallback) {
     exec(successCallback, errorCallback, PLUGIN_NAME, 'startDiscover', []);
+  },  
+  addTextLang: function(successCallback, errorCallback, lang) {
+    exec(successCallback, errorCallback, PLUGIN_NAME, 'addTextLang', lang);
   },
   stopDiscover: function(successCallback, errorCallback) {
     exec(successCallback, errorCallback, PLUGIN_NAME, 'stopDiscover', []);
