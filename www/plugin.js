@@ -10,6 +10,9 @@ var epos2 = {
   addTextLang: function(successCallback, errorCallback, lang) {
     exec(successCallback, errorCallback, PLUGIN_NAME, 'addTextLang', lang);
   },
+  getStatus: function(successCallback, errorCallback) {
+    exec(successCallback, errorCallback, PLUGIN_NAME, 'getStatus');
+  },
   stopDiscover: function(successCallback, errorCallback) {
     exec(successCallback, errorCallback, PLUGIN_NAME, 'stopDiscover', []);
   },
